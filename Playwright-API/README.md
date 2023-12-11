@@ -1,0 +1,1 @@
+This folder contains projects automating API testing with Playwright utilizing TestScript

@@ -1,0 +1,1 @@
+This folder contains Automation Testing Scripts utilizing Java and Selenium/TestNG

@@ -4,7 +4,9 @@ This repository contains my most recent personal Automation Testing Projects.
 
 Websites which the automation test scripts will be run on:
 
-1. [Magento Demo Site](https://magento.softwaretestingboard.com/)
+1. [Magento Demo Site](https://magento2-demo.magebit.com/)
+
+   a. [Magento Admin](https://magento2-demo.magebit.com/admin) Username: magebit Password: Demo123
 
 2. [Parabank-Parasoft Demo Site](https://parabank.parasoft.com/parabank/index.htm)
     * **Note**: This site may also includes my writeup for hacking the site.

@@ -6,3 +6,5 @@ Gradle is: library packages controls
 	PHP: Commposer
 	
 Test NG/Selenium/WebDriverManager download location: Maven Repository
+
+Project for TestNG: Gradle with SDL build Groovy

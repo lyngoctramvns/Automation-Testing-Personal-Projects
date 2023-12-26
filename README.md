@@ -20,3 +20,5 @@ Websites which the automation test scripts will be run on:
 6. [Restful Booker UI Testing Site](https://automationintesting.online/)
 
 **Note**: The walkthrough for Parabank Hacking Site: [Parabank Walkthrough](https://zerodayhacker.com/parabank-walkthrough/)
+
+**Note to self**: Research further on Selenium Grid

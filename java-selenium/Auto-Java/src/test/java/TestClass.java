@@ -14,6 +14,7 @@ public class TestClass {
     @Test
     public void RunTest(){
         chromeDriver.get("https://www.saucedemo.com/");
+        sleep(5000);
     }
 
     @Test
@@ -23,6 +24,13 @@ public class TestClass {
 
     @AfterMethod
     public void afterTest(){
-
+        chromeDriver.quit();
+    }
+    private void sleep(int time){
+        try{
+            Thread.sleep(time);
+        } catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
     }
 }

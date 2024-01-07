@@ -4,7 +4,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TestClass {
+public class TestClassStoreFront {
     ChromeDriver chromeDriver;
     @BeforeMethod
     public void beforeTest(){
@@ -19,6 +19,7 @@ public class TestClass {
 
     @Test
     public void RunTest2(){
+
         System.out.println("Hello TestNG 2");
     }
 

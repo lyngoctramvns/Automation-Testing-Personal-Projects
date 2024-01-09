@@ -1,3 +1,3 @@
 This folder contains projects automating API testing with Playwright utilizing TestScript:
 
-Subject of tests: Module Shopify - B2B Solution
+Subject of tests: https://www.omdbapi.com/

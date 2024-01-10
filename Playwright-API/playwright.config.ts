@@ -46,6 +46,15 @@ export default defineConfig({
       baseURL: 'https://restful-booker.herokuapp.com',
       ...devices['Desktop Chrome']
     }
+   },
+   {
+    name: 'Heroku App - Firefox',
+    testMatch: '*book-heroku/*.spec.ts',
+    use: {
+      baseURL: 'https://restful-booker.herokuapp.com',
+      ...devices['Desktop Firefox'] 
+    
+    }
    }
   ],
 

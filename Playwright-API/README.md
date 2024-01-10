@@ -9,6 +9,5 @@ ENV
 ```
    API_TOKEN = yourOMDBtoken
    BOOKER_USERNAME = yourusername
-   BOOKER_PASSWORD = yourpassword
-   
+   BOOKER_PASSWORD = yourpassword 
 ```

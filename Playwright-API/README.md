@@ -7,6 +7,8 @@ Subject of tests 2: [Restful Booker API](https://restful-booker.herokuapp.com/ap
 
 ENV
 ```
-   API_TOKEN = 8f868127
+   API_TOKEN = yourOMDBtoken
+   BOOKER_USERNAME = yourusername
+   BOOKER_PASSWORD = yourpassword
    
 ```

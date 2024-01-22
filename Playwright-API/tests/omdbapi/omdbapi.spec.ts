@@ -1,11 +1,13 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 import { test, expect} from '@playwright/test';
-const token:any = process.env.API_TOKEN;
+import EndPoints from "../../constants/endPoints.constant";
+
+const movieSearchURI = new EndPoints().MOVIE_SEARCH;
 
 
 test('Get movies according to year - 2019', async ({request}) => {
-    const response = await request.get(`/?apikey=${token}&t=baby&y=2019&r=json&plot=full`);
+    const response = await request.get(movieSearchURI);
     const responseBody = await response.json();
     expect(response.ok()).toBeTruthy();
     expect(response.status()).toBe(200);

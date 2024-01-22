@@ -1,11 +1,13 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 import { test, expect} from '@playwright/test';
+import EndPoints from "../../constants/endPoints.constant";
+const authen = new EndPoints().BOOK_AUTH
 const username = process.env.BOOKER_USERNAME;
 const password = process.env.BOOKER_PASSWORD;
 
 test('Test authentication', async({request})=> {
-    const response = await request.post('/auth', {
+    const response = await request.post(authen, {
         headers: {
             'Content-Type':'application/json'
         },

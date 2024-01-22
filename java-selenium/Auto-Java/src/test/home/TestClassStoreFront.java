@@ -12,15 +12,9 @@ public class TestClassStoreFront {
         chromeDriver = new ChromeDriver();
     }
     @Test
-    public void RunTest(){
+    public void GoToHome(){
         chromeDriver.get("https://www.saucedemo.com/");
         sleep(5000);
-    }
-
-    @Test
-    public void RunTest2(){
-
-        System.out.println("Hello TestNG 2");
     }
 
     @AfterMethod

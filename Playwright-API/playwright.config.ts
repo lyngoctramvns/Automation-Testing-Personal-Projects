@@ -55,6 +55,13 @@ export default defineConfig({
       ...devices['Desktop Firefox'] 
     
     }
+   },
+   {
+    name: 'Login Page',
+    testMatch: '*testLogin/*.spec.ts',
+    use: {
+      ...devices['Desktop Chrome']
+    }
    }
   ],
 

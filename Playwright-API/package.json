@@ -1,17 +1,14 @@
 {
-  "name": "playwright-api",
+  "name": "new-project",
   "version": "1.0.0",
-  "description": "This folder contains projects automating API testing with Playwright utilizing TypeScript.",
+  "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test && npx playwright show-report"
-  },
+  "scripts": {},
   "keywords": [],
-  "author": "Tram Ly Ngoc",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.8",
-    "dotenv": "^16.3.1"
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7"
   }
 }

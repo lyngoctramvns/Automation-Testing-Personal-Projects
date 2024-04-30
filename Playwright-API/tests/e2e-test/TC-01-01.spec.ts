@@ -32,9 +32,8 @@ async function testScenario(
     const startBannerLocation = await mainPageComponents.getBannerButton();
     expect(startBannerLocation).toBeVisible();
   });
-  await test.step("Click banner and check if the banner disappeared", async () => {
+  await test.step("Click banner button and check if the banner disappeared", async () => {
     await bookingPage.visitMainPage();
     await basePage.clickStartBanner();
   });
-
 }

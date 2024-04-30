@@ -15,3 +15,5 @@ ENV
    BOOKER_USERNAME = yourusername
    BOOKER_PASSWORD = yourpassword 
 ```
+
+**Note**: Remember to alway have await before test.step

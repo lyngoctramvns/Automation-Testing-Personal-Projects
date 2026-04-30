@@ -11,3 +11,5 @@ Feature: Home Page
         Then The site is scrolled to the booking section
 
 Feature: Booking Form
+
+    Scenario: Verify the booking form is visible

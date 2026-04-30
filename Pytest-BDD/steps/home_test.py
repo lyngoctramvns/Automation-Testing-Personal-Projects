@@ -40,3 +40,4 @@ def check_scrolled_to_booking(test_browser):
     # Check if booking section is visible
     assert new_home.is_booking_section_visible(test_browser), "Booking section is not visible after clicking booking button"
 
+

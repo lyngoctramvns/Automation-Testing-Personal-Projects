@@ -4,8 +4,7 @@ Website for testing: (Restful Booker UI Testing Site)[https://automationintestin
 
 How to run:
 1. Run a specific test suite
-Run the .py file within /steps for specific test suite
 ```bash
-python -m pytest home.py
+python -m pytest steps/$file_name.py
 ```
-2. 
+2. Run the entire test suites folder

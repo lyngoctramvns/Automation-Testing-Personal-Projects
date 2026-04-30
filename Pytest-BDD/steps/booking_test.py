@@ -1,8 +1,10 @@
 from pytest_bdd import scenario, given, when, then
 import time
 
+from src.Home_class import Home
 from src.Booking_class import Booking
 
+new_home = Home()
 new_booking = Booking()
 
 # Booking form testing partitions: Form visibility, Title (confirm visibility & correctness), Date range field (end date, start date input, invalid range), Check Availability button (confirm visibility, confirm clickability, confirm correct response to click)
@@ -10,4 +12,9 @@ new_booking = Booking()
 @scenario('../tests/home_test.feature', 'Verify the booking form is visible')
 def booking_form_visible():
     pass
+
+@given('I am on the home page')
+def go_to_home_page(test_browser):
+    new_home.visit_page(test_browser)
+
 

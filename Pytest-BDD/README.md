@@ -8,3 +8,7 @@ How to run:
 python -m pytest steps/$file_name.py
 ```
 2. Run the entire test suites folder
+```bash
+python -m pytest steps/
+```
+

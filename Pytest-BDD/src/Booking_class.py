@@ -7,3 +7,6 @@ class Booking:
     def get_booking_form_title(self, browser):
         booking_form_title = browser.find_by_xpath("//h3[@class='card-title text-center mb-4']")
         return booking_form_title.text
+
+    def booking_form_date_range_input(self, browser):
+        

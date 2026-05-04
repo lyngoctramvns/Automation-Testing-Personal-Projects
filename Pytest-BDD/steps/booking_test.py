@@ -33,3 +33,15 @@ def go_to_home_page(test_browser):
 @then('The booking form title should be visible')
 def check_booking_form_title(test_browser):
     assert new_booking.get_booking_form_title(test_browser), "Booking form title is not visible on the booking form page"
+
+@scenario('../tests/booking_test.feature', 'Verify the booking form date range field is visible')
+def test_booking_form_date_range_field_visible():
+    pass
+
+@given('The booking form is visible')
+def check_booking_form_visible(test_browser):
+    assert new_booking.check_booking_form_visible(test_browser), "Booking form is not visible on the home page"
+
+@then('The booking form date range input fields should be visible')
+def check_booking_form_date_range_input(test_browser):
+    

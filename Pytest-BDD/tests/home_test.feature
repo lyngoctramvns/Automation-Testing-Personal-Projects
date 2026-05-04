@@ -9,9 +9,3 @@ Feature: Home Page
         Given I am on the home page
         When I click Booking button
         Then The site is scrolled to the booking section
-
-Feature: Booking Form
-
-    Scenario: Verify the booking form is visible
-        Given I am on the home page
-        Then The booking form should be visible

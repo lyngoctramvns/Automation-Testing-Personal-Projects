@@ -9,12 +9,27 @@ new_booking = Booking()
 
 # Booking form testing partitions: Form visibility, Title (confirm visibility & correctness), Date range field (end date, start date input, invalid range), Check Availability button (confirm visibility, confirm clickability, confirm correct response to click)
 
-@scenario('../tests/home_test.feature', 'Verify the booking form is visible')
-def booking_form_visible():
+@scenario('../tests/booking_test.feature', 'Verify the booking form is visible')
+def test_booking_form_visible():
     pass
 
 @given('I am on the home page')
 def go_to_home_page(test_browser):
     new_home.visit_page(test_browser)
 
+@then('The booking form should be visible')
+def check_booking_form_visible(test_browser):
+    time.sleep(1)
+    assert new_booking.check_booking_form_visible(test_browser), "Booking form is not visible on the home page"
 
+@scenario('../tests/booking_test.feature', 'Verify the booking form title')
+def test_booking_form_title():
+    pass
+
+@given('I am on the booking form page')
+def go_to_home_page(test_browser):
+    new_home.visit_page(test_browser)
+
+@then('The booking form title should be visible')
+def check_booking_form_title(test_browser):
+    assert new_booking.get_booking_form_title(test_browser), "Booking form title is not visible on the booking form page"

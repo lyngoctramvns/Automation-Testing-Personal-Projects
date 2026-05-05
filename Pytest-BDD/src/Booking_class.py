@@ -9,4 +9,6 @@ class Booking:
         return booking_form_title.text
 
     def booking_form_date_range_input(self, browser):
-        
+        booking_form_check_in_input = browser.find_by_xpath("//label[contains(text(), 'Check In')]/following-sibling::div//input")
+        booking_form_check_out_input = browser.find_by_xpath("//label[contains(text(), 'Check Out')]/following-sibling::div//input")
+        return booking_form_check_in_input.visible and booking_form_check_out_input.visible

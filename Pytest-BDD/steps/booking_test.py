@@ -44,4 +44,10 @@ def check_booking_form_visible(test_browser):
 
 @then('The booking form date range input fields should be visible')
 def check_booking_form_date_range_input(test_browser):
-    
+    assert new_booking.booking_form_date_range_input(test_browser), "Booking form date range input fields are not visible on the booking form page"
+
+@scenario('../tests/booking_test.feature', 'Enter valid date range and click Check Availability button')
+def test_valid_date_time_input():
+    pass
+
+@given('The booking form is visible')

@@ -1,4 +1,4 @@
-from pytest_bdd import scenario, given, when, then
+from pytest_bdd import scenario, given, when, then, parsers
 import time
 
 from src.Home_class import Home
@@ -51,3 +51,16 @@ def test_valid_date_time_input():
     pass
 
 @given('The booking form is visible')
+def check_booking_form_visible(test_browser):
+    assert new_booking.check_booking_form_visible(test_browser), "Booking form is not visible on the home page"
+
+@when(parsers.parse('I enter the "{date_range}" date range'))
+def enter_valid_date_range(test_browser, date_range):
+    new_booking.enter_date_range(test_browser, date_range)
+
+@when('I click Check Availability button')
+def click_check_availability_button(test_browser):
+    new_booking.click_check_availability_button(test_browser)
+
+@then('The availability result should be visible')
+def check_availability_result(test_browser):

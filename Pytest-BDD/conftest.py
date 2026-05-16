@@ -13,3 +13,7 @@ def test_browser(splinter_webdriver):
     browser.visit("https://automationintesting.online/")
     yield browser
     browser.quit()
+
+@pytest.fixture(autouse=True)
+def seed_faker(faker):
+    faker.seed_instance(4321)

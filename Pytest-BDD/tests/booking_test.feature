@@ -14,6 +14,12 @@ Feature: Booking
 
     Scenario: Enter valid date range and click Check Availability button
         Given The booking form is visible
-        When I enter the valid date range
+        When I enter the "future" date range
         And I click Check Availability button
         Then The availability result should be visible
+
+    Scenario: Enter invalid date range and click Check Availability button
+        Given The booking form is visible
+        When I enter the "past" date range
+        And I click Check Availability button
+        Then The availability result shouldn't be available

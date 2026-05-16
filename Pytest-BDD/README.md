@@ -4,7 +4,19 @@ Website for testing: (Restful Booker UI Testing Site)[https://automationintestin
 
 Using Gherkin - BDD to test on Pytest
 
-How to run:
+### How to run:
+
+#### Pre-requisites:
+
+install venv and dependencies:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+
 1. Run a specific test suite
 ```bash
 python -m pytest steps/$file_name.py

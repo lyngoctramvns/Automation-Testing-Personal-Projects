@@ -1,3 +1,7 @@
+from faker import Faker
+import time
+
+fake = Faker()
 
 class Booking:
     def check_booking_form_visible(self, browser):
@@ -13,15 +17,25 @@ class Booking:
         booking_form_check_out_input = browser.find_by_xpath("//label[contains(text(), 'Check Out')]/following-sibling::div//input")
         return booking_form_check_in_input.visible and booking_form_check_out_input.visible
 
-    def enter_date_range(self, browser, faker, date_range):
+    def enter_date_range(self, browser, date_range):
         if date_range == "future":
-            check_in_date = faker.date_future().strftime("%Y-%m-%d")
-            check_out_date = faker.date_future().strftime("%Y-%m-%d")
+            check_in_date = fake.date_between(start_date="+0d", end_date="+1w").strftime("%d/%m/%Y")
+            check_out_date = fake.date_between(start_date="+0d", end_date="+1w").strftime("%d/%m/%Y")
         else:
-            check_in_date = faker.date_past().strftime("%Y-%m-%d")
-            check_out_date = faker.date_future().strftime("%Y-%m-%d")
-        browser.find_by_xpath("//label[contains(text(), 'Check In')]/following-sibling::div//input").fill(check_in_date)
-        browser.find_by_xpath("//label[contains(text(), 'Check Out')]/following-sibling::div//input").fill(check_out_date)
+            check_in_date = fake.date_between(start_date="+0d", end_date="-1w").strftime("%d/%m/%Y")
+            check_out_date = fake.date_between(start_date="+0d", end_date="-1w").strftime("%d/%m/%Y")
+
+        start_xpath = "//label[contains(text(), 'Check In')]/following-sibling::div//input"
+        end_xpath = "//label[contains(text(), 'Check Out')]/following-sibling::div//input"
+        # clear elements fields, then fill them with the new values
+        check_in_field = browser.find_by_xpath(start_xpath).first
+        check_in_field.fill("")
+        time.sleep(5)
+        check_in_field.fill(check_in_date)
+        check_out_field = browser.find_by_xpath(end_xpath).first
+        check_out_field.fill("")
+        time.sleep(5)
+        check_out_field.fill(check_out_date)
         return check_in_date, check_out_date
 
     def click_check_availability_button(self, browser):
@@ -29,4 +43,5 @@ class Booking:
         availability_button.click()
 
     def check_availability_rooms(self, browser):
-        available_rooms = browser.find_by_xpath("")
+        available_rooms = browser.find_by_xpath("//div[contains(@class,'room-card')]")
+        return available_rooms.visible

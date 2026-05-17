@@ -64,3 +64,4 @@ def click_check_availability_button(test_browser):
 
 @then('The availability result should be visible')
 def check_availability_rooms(test_browser):
+    assert new_booking.check_availability_rooms(test_browser), "Available rooms are not displayed when enter valid date range"

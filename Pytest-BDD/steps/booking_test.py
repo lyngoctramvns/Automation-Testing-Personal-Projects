@@ -63,4 +63,4 @@ def click_check_availability_button(test_browser):
     new_booking.click_check_availability_button(test_browser)
 
 @then('The availability result should be visible')
-def check_availability_result(test_browser):
+def check_availability_rooms(test_browser):

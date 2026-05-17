@@ -28,5 +28,5 @@ class Booking:
         availability_button = browser.find_by_xpath("//button[contains(text(), 'Check Availability')]")
         availability_button.click()
 
-    def check_availability_result(self, browser):
-        
+    def check_availability_rooms(self, browser):
+        available_rooms = browser.find_by_xpath("")

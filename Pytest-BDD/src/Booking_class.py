@@ -21,9 +21,9 @@ class Booking:
         if date_range == "future":
             check_in_date = fake.date_between(start_date="+0d", end_date="+1w").strftime("%d/%m/%Y")
             check_out_date = fake.date_between(start_date="+0d", end_date="+1w").strftime("%d/%m/%Y")
-        else:
-            check_in_date = fake.date_between(start_date="+0d", end_date="-1w").strftime("%d/%m/%Y")
-            check_out_date = fake.date_between(start_date="+0d", end_date="-1w").strftime("%d/%m/%Y")
+        elif date_range == "past":
+            check_in_date = fake.date_between(start_date="-1m", end_date="-1d").strftime("%d/%m/%Y")
+            check_out_date = fake.date_between(start_date="-1m", end_date="-1d").strftime("%d/%m/%Y")
 
         start_xpath = "//label[contains(text(), 'Check In')]/following-sibling::div//input"
         end_xpath = "//label[contains(text(), 'Check Out')]/following-sibling::div//input"

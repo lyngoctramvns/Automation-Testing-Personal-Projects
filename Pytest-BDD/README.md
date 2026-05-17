@@ -26,3 +26,20 @@ python -m pytest steps/$file_name.py
 python -m pytest steps/
 ```
 
+### How to generate reports:
+1. Generate allure-results
+```bash
+python -m pytest --alluredir allure-results
+```
+2. 
+    1. If you have Nodejs installed, run:
+    ```bash
+    npx allure-commandline serve allure-results
+    ```
+   2. If not, using pytest-report:
+    ```bash
+    pip install pytest-html
+    python -m pytest --html=report.html --self-contained-html
+    start report.html
+    ```
+

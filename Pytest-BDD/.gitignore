@@ -4,3 +4,4 @@ venv/
 .idea/
 allure-results/
 report.html
+.env

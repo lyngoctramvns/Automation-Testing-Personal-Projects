@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv, dotenv_values
 
+load_dotenv()
 
 class Home: 
     def visit_page(self, browser):
-        browser.visit("https://automationintesting.online/")
+        browser.visit(os.getenv("SITE_URL"))
 
     def get_title(self, browser):
         get_page_title = browser.find_by_xpath("//div[@class='container']//a[@class='navbar-brand d-flex align-items-center']//span").text

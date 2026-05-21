@@ -2,6 +2,9 @@
 
 Website for testing: (Restful Booker UI Testing Site)[https://automationintesting.online/]
 
+To run the test suites with local booking site, clone the following repo and follow the instructions:
+[Restful-booker-platform](https://github.com/mwinteringham/restful-booker-platform)
+
 Using Gherkin - BDD to test on Pytest
 
 ### How to run:

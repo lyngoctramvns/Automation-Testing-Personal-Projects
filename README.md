@@ -22,3 +22,7 @@ Websites which the automation test scripts will be run on:
 **Note**: The walkthrough for Parabank Hacking Site: [Parabank Walkthrough](https://zerodayhacker.com/parabank-walkthrough/)
 
 **Note to self**: Research further on Selenium Grid
+
+## How to install Maven & Java JDK:
+
+[Instruction](https://automationintesting.com/setup/settingupmaven)

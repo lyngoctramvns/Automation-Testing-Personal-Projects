@@ -1,0 +1,6 @@
+booking_form = "//div[@class='card shadow booking-card']"
+booking_form_title = "//h3[@class='card-title text-center mb-4']"
+check_in_date_input = "//label[contains(text(), 'Check In')]/following-sibling::div//input"
+check_out_date_input = "//label[contains(text(), 'Check Out')]/following-sibling::div//input"
+check_availability_button = "//button[contains(text(), 'Check Availability')]"
+rooms_available = "//div[contains(@class,'room-card')]"

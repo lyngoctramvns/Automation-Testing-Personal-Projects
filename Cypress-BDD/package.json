@@ -1,0 +1,18 @@
+{
+  "name": "cypress-e2e-testing",
+  "version": "1.0.0",
+  "description": "A project for end-to-end testing using Cypress and Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "author": "Charlie Ly",
+  "devDependencies": {
+    "cypress": "^15.16.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/Tests"
+  }
+}

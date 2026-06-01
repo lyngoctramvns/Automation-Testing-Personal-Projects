@@ -6,3 +6,7 @@ const homePage = new HomePage();
 Given("I am on the home page", () => {
   homePage.visitURL();
 });
+
+Then("The header section should be visible", () => {
+  homePage.headerSection().should("be.visible");
+});

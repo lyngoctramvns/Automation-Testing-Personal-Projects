@@ -4,7 +4,7 @@
   "description": "A project for end-to-end testing using Cypress and Cucumber.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "cypress open"
   },
   "author": "Charlie Ly",
   "devDependencies": {

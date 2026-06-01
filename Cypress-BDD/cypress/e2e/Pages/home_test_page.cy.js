@@ -1,6 +1,6 @@
 class HomePage {
     visitURL(){
-        cy.fixture("example").then((data) => {
+        cy.fixture("home").then((data) => {
             cy.visit(data.url);
         });
     }

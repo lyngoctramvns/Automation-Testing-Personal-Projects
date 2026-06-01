@@ -5,8 +5,13 @@ class HomePage {
         });
     }
     headerSection(){
-        let header = cy.get("")
+        let header = cy.get("[class='panel header']");
         return header;
+    }
+
+    footerSection(){
+        let footer = cy.get("[class='footer content']");
+        return footer;
     }
 }
 

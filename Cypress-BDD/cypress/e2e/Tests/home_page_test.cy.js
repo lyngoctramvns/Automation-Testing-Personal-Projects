@@ -10,3 +10,12 @@ Given("I am on the home page", () => {
 Then("The header section should be visible", () => {
   homePage.headerSection().should("be.visible");
 });
+
+Given("I am on the home page", () => {
+  homePage.visitURL();
+});
+
+Then("The footer section should be visible", () => {
+    homePage.footerSection().should("be.visible");
+});
+

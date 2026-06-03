@@ -2,6 +2,6 @@
 __pycache__/
 venv/
 .idea/
-allure-results/
-report.html
-.env
+e2e/allure-results/
+e2e/report.html
+e2e/.env

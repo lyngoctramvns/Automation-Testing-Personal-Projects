@@ -1,6 +1,8 @@
 ## Automation Testing using Pytest - BDD
 
-Website for testing: [Restful Booker UI Testing Site](https://automationintesting.online/)
+Website for E2E testing: [Restful Booker UI Testing Site](https://automationintesting.online/)
+
+API testing script for Restful Booker: [API documentation](https://restful-booker.herokuapp.com/apidoc/index.html)
 
 To run the test suites with local booking site, clone the following repo and follow the instructions:
 [Restful-booker-platform](https://github.com/mwinteringham/restful-booker-platform)
@@ -24,13 +26,13 @@ pip install -r requirements.txt
 SITE_URL=""
 ```
 
-1. Run a specific test suite
+1. Run a specific E2E test suite
 ```bash
-python -m pytest steps/$file_name.py
+python -m pytest e2e/steps/$file_name.py
 ```
-2. Run the entire test suites folder
+2. Run the entire E2E test suites folder
 ```bash
-python -m pytest steps/
+python -m pytest e2e/steps/
 ```
 
 ### How to generate reports:

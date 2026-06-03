@@ -18,7 +18,11 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+.env - See the above for the site url link. Or if you run locally, set the localhost url in the .env file.
 
+```bash
+SITE_URL=""
+```
 
 1. Run a specific test suite
 ```bash
@@ -45,4 +49,8 @@ python -m pytest --alluredir allure-results
     python -m pytest --html=report.html --self-contained-html
     start report.html
     ```
+**NOTE:** For actual tests, developers are asked to include test classes/ test ids to catch as locators.
 
+### Github Actions:
+
+Will be run in a separate repo. The result is shown below:

@@ -23,4 +23,4 @@ jobs:
           pip install -r requirements.txt
       - name: Run Pytest Automation Suite
         run: |
-          python -m pytest steps/
+          python -m pytest e2e/steps/

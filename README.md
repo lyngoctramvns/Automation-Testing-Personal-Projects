@@ -21,7 +21,12 @@ Websites which the automation test scripts will be run on:
 
 **Note**: The walkthrough for Parabank Hacking Site: [Parabank Walkthrough](https://zerodayhacker.com/parabank-walkthrough/)
 
-**Note to self**: Research further on Selenium Grid
+### Demo application microservices for contract testing:
+
+1. Online Boutique: [Online Boutique](https://github.com/GoogleCloudPlatform/microservices-demo)
+2. Pact examples: [Python-pact](https://github.com/pact-foundation/pact-python/tree/main/examples)
+3. Sock Shop: [Sock Shop](https://github.com/ocp-power-demos/sock-shop-demo)
+4. Mounte Bank: [Mounte Bank Github Link](https://github.com/mountebank-testing/mountebank), [Mounte Bank Home Page](https://www.mbtest.dev/)
 
 ## How to install Maven & Java JDK:
 

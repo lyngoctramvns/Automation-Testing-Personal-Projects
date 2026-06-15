@@ -46,3 +46,4 @@ class Booking:
     def check_availability_rooms(self, browser):
         available_rooms = browser.find_by_xpath(e2e.locators.booking.rooms_available)
         return available_rooms.visible
+        

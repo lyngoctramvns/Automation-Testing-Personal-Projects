@@ -4,3 +4,4 @@ check_in_date_input = "//label[contains(text(), 'Check In')]/following-sibling::
 check_out_date_input = "//label[contains(text(), 'Check Out')]/following-sibling::div//input"
 check_availability_button = "//button[contains(text(), 'Check Availability')]"
 rooms_available = "//div[contains(@class,'room-card')]"
+booking_page = "https://automationintesting.online/reservation/"

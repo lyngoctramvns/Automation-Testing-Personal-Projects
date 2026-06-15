@@ -1,4 +1,4 @@
-Feature: Booking
+Feature: Booking Form at Home Page
 
     Scenario: Verify the booking form is visible
         Given I am on the home page

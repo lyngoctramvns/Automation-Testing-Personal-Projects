@@ -4,15 +4,18 @@
   "description": "A project for end-to-end testing using Cypress and Cucumber.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "typecheck": "tsc --noEmit"
   },
   "author": "Charlie Ly",
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@types/cypress": "^1.1.6",
+    "@types/node": "^26.0.0",
     "cypress": "^15.16.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false,
-    "step_definitions": "cypress/e2e/Tests"
+    "esbuild": "^0.28.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   }
 }

@@ -56,4 +56,16 @@ python -m pytest --alluredir allure-results
 
 ### Github Actions:
 
+Once there is a push to the repo, it will automatically run yml file. 
+Note:
+```bash
+# After extracting the downloaded allure-report.zip:
+cd allure-report
+python -m http.server 8080
+```
+Then open http://localhost:8080 on your local machine. The report should be available for display there.
+
 Will be run in a separate repo. The result is shown below:
+![Github Actions Run](./results-image/image.png)
+![Report](./results-image/image1.png)
+![Report 2](./results-image/image2.png)

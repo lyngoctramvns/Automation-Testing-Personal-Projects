@@ -1,0 +1,7 @@
+contact_form = "//section[contains(@id,'contact')]"
+contact_title = "{contact_form}//div[contains(@class,'card-body')]//h3[text()='Send Us a Message']"
+contact_field = "{contact_form}//div[contains(@class,'card-body')]//div[contains(@class,'mb-3')]//label[text()='{field}']/following-sibling::input"
+contact_message_field = "{contact_form}//div[contains(@class,'card-body')]//div[contains(@class,'mb-4')]//label[text()='{field}']/following-sibling::textarea"
+contact_button = "{contact_form}//div[contains(@class,'d-grid')]//button[normalize-space()='Submit']"
+success_div = "{contact_form}//div[contains(@class,'card-body')]//h3"
+error_div = "//div[contains(@class,'alert-danger')]/p"

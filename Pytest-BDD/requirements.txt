@@ -1,5 +1,7 @@
 pytest==9.0.3
 pytest_bdd==8.1.0
 splinter==0.21.0
+allure-pytest==2.16.0
 python-dotenv==1.2.2
 faker==40.15.0
+selenium==4.44.0
